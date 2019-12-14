@@ -1,0 +1,29 @@
+D:\projects-desktop\Custom Stencils\ZeraSystems.Cshtml\source\obj\Debug\Cshtml.csprojResolveAssemblyReference.cache
+D:\projects-desktop\Custom Stencils\ZeraSystems.Cshtml\source\obj\Debug\Cshtml.csproj.CoreCompileInputs.cache
+D:\projects-desktop\Custom Stencils\ZeraSystems.Cshtml\source\obj\Debug\ZeraSystems.CodeNanite.Cshtml.dll
+D:\projects-desktop\Custom Stencils\ZeraSystems.Cshtml\source\obj\Debug\ZeraSystems.CodeNanite.Cshtml.pdb
+D:\projects-desktop\Custom Stencils\build\ZeraSystems.CodeNanite.Cshtml.dll
+D:\projects-desktop\Custom Stencils\build\ZeraSystems.CodeNanite.Cshtml.pdb
+D:\projects-desktop\Custom Stencils\ZeraSystems.Cshtml\src\Cshtml\obj\Debug\Cshtml.csprojAssemblyReference.cache
+D:\projects-desktop\Custom Stencils\ZeraSystems.Cshtml\src\Cshtml\obj\Debug\ZeraSystems.CodeNanite.Cshtml.frmSelectEntities.resources
+D:\projects-desktop\Custom Stencils\ZeraSystems.Cshtml\src\Cshtml\obj\Debug\Cshtml.csproj.GenerateResource.cache
+D:\projects-desktop\Custom Stencils\ZeraSystems.Cshtml\src\Cshtml\obj\Debug\Cshtml.csproj.CoreCompileInputs.cache
+D:\projects-desktop\Custom Stencils\ZeraSystems.Cshtml\src\Cshtml\obj\Debug\Cshtml.csproj.CopyComplete
+D:\projects-desktop\Custom Stencils\ZeraSystems.Cshtml\src\Cshtml\obj\Debug\ZeraSystems.CodeNanite.Cshtml.dll
+D:\projects-desktop\Custom Stencils\ZeraSystems.Cshtml\src\Cshtml\obj\Debug\ZeraSystems.CodeNanite.Cshtml.pdb
+D:\projects-desktop\custom-stencils\build\ZeraSystems.CodeNanite.Cshtml.dll
+D:\projects-desktop\custom-stencils\build\ZeraSystems.CodeNanite.Cshtml.pdb
+D:\projects-desktop\custom-stencils\ZeraSystems.Cshtml\src\Cshtml\obj\Debug\Cshtml.csprojAssemblyReference.cache
+D:\projects-desktop\custom-stencils\ZeraSystems.Cshtml\src\Cshtml\obj\Debug\ZeraSystems.CodeNanite.Cshtml.frmSelectEntities.resources
+D:\projects-desktop\custom-stencils\ZeraSystems.Cshtml\src\Cshtml\obj\Debug\Cshtml.csproj.GenerateResource.cache
+D:\projects-desktop\custom-stencils\ZeraSystems.Cshtml\src\Cshtml\obj\Debug\Cshtml.csproj.CoreCompileInputs.cache
+D:\projects-desktop\custom-stencils\ZeraSystems.Cshtml\src\Cshtml\obj\Debug\Cshtml.csproj.CopyComplete
+D:\projects-desktop\custom-stencils\ZeraSystems.Cshtml\src\Cshtml\obj\Debug\ZeraSystems.CodeNanite.Cshtml.dll
+D:\projects-desktop\custom-stencils\ZeraSystems.Cshtml\src\Cshtml\obj\Debug\ZeraSystems.CodeNanite.Cshtml.pdb
+D:\projects-desktop\codestencil\code-nanites\build\ZeraSystems.CodeNanite.Cshtml.dll
+D:\projects-desktop\codestencil\code-nanites\build\ZeraSystems.CodeNanite.Cshtml.pdb
+D:\projects-desktop\codestencil\code-nanites\zerasystems.cshtml\build\debug\ZeraSystems.CodeNanite.Cshtml.dll
+D:\projects-desktop\codestencil\code-nanites\zerasystems.cshtml\build\debug\ZeraSystems.CodeNanite.Cshtml.pdb
+D:\projects-desktop\codestencil\code-nanites\zerasystems.cshtml\src\Cshtml\obj\Debug\Cshtml.csprojAssemblyReference.cache
+D:\projects-desktop\codestencil\code-nanites\zerasystems.cshtml\src\Cshtml\obj\Debug\ZeraSystems.CodeNanite.Cshtml.frmSelectEntities.resources
+D:\projects-desktop\codestencil\code-nanites\zerasystems.cshtml\src\Cshtml\obj\Debug\Cshtml.csproj.GenerateResource.cache

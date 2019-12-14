@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F0C64AB6-8E20-4D8C-AD71-3D0B61844E4E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ZeraSystems.CodeNanite.Cshtml</RootNamespace>
+    <AssemblyName>ZeraSystems.CodeNanite.Cshtml</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\build\debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\build\release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\build\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>..\..\build\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>false</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Pluralize.NET, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Pluralize.NET.1.0.2\lib\net46\Pluralize.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="ZeraSystems.CodeNanite.Expansion, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <HintPath>..\packages\ZeraSystems.CodeNanite.Expansion.1.0.0\lib\net462\ZeraSystems.CodeNanite.Expansion.dll</HintPath>
+    </Reference>
+    <Reference Include="ZeraSystems.CodeStencil.Contracts, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZeraSystems.CodeStencil.Contracts.1.1.1\lib\net462\ZeraSystems.CodeStencil.Contracts.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="General.cs" />
+    <Compile Include="Htmlz\Create\RazorCreate.cs" />
+    <Compile Include="Htmlz\Create\RazorCreate.Functions.cs" />
+    <Compile Include="Htmlz\Create\RazorCreateCs.cs" />
+    <Compile Include="Htmlz\Create\RazorCreateCs.Functions.cs" />
+    <Compile Include="Htmlz\Delete\RazorDeleteCs.cs" />
+    <Compile Include="Htmlz\Delete\RazorDeleteCs.Functions.cs" />
+    <Compile Include="Htmlz\Delete\RazorDelete.cs" />
+    <Compile Include="Htmlz\Delete\RazorDelete.Functions.cs" />
+    <Compile Include="Htmlz\Details\RazorDetailsCs.cs" />
+    <Compile Include="Htmlz\Details\RazorDetailsCs.Functions.cs" />
+    <Compile Include="Htmlz\Details\RazorDetails.cs" />
+    <Compile Include="Htmlz\Details\RazorDetails.Functions.cs" />
+    <Compile Include="Htmlz\Edit\RazorEditCs.cs" />
+    <Compile Include="Htmlz\Edit\RazorEditCs.Functions.cs" />
+    <Compile Include="Htmlz\Edit\RazorEdit.cs" />
+    <Compile Include="Htmlz\Edit\RazorEdit.Functions.cs" />
+    <Compile Include="Htmlz\Index\RazorIndexSortSwitch.cs" />
+    <Compile Include="Htmlz\Index\RazorIndexSearchString.cs" />
+    <Compile Include="Htmlz\Index\RazorIndexQuery.cs" />
+    <Compile Include="Htmlz\Index\RazorIndexSortSwitch.Functions.cs" />
+    <Compile Include="Htmlz\Index\RazorIndexSearchString.Functions.cs" />
+    <Compile Include="Htmlz\Index\RazorIndexQuery.Functions.cs" />
+    <Compile Include="Htmlz\Index\RazorIndexCs.cs" />
+    <Compile Include="Htmlz\Index\RazorIndexCs.Functions.cs" />
+    <Compile Include="Htmlz\Index\RazorIndex.Functions.cs" />
+    <Compile Include="Htmlz\Index\RazorIndex.cs" />
+    <Compile Include="Htmlz\Lookup\GenerateLookups.cs" />
+    <Compile Include="Htmlz\Lookup\GenerateLookups.Functions.cs" />
+    <Compile Include="Htmlz\RazorIncludeFkColumns.cs" />
+    <Compile Include="Htmlz\RazorIncludeFkColumns.Functions.cs" />
+    <Compile Include="Html\CshtmlController.Functions.cs">
+      <DependentUpon>CshtmlController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Html\CshtmlCreate.Functions.cs">
+      <DependentUpon>CshtmlCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Html\CshtmlIncludeThenInclude.cs" />
+    <Compile Include="Html\CshtmlIncludeThenInclude.Functions.cs">
+      <DependentUpon>CshtmlIncludeThenInclude.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Html\CshtmlTableBody.cs" />
+    <Compile Include="Html\CshtmlTableBody.Functions.cs">
+      <DependentUpon>CshtmlTableBody.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Html\CshtmlTableHead.cs" />
+    <Compile Include="Html\CshtmlHtmlDisplay.cs" />
+    <Compile Include="Html\CshtmlFormGroup.cs" />
+    <Compile Include="Html\CshtmlDelete.cs" />
+    <Compile Include="Html\CshtmlDelete.Functions.cs">
+      <DependentUpon>CshtmlDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Html\CshtmlController.cs" />
+    <Compile Include="Html\CshtmlFormGroup.Functions.cs">
+      <DependentUpon>CshtmlFormGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Html\CshtmlTableHead.Functions.cs" />
+    <Compile Include="Html\CshtmlHtmlDisplay.Functions.cs" />
+    <Compile Include="Html\CshtmlIndex.cs" />
+    <Compile Include="Html\CshtmlDetails.cs" />
+    <Compile Include="Html\CshtmlDetails.Functions.cs">
+      <DependentUpon>CshtmlDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Html\CshtmlEdit.cs" />
+    <Compile Include="Html\CshtmlCreate.cs" />
+    <Compile Include="Html\CshtmlEdit.Functions.cs">
+      <DependentUpon>CshtmlEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Html\CshtmlIndex.Functions.cs">
+      <DependentUpon>CshtmlIndex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Html\frmSelectEntities.Actions.cs">
+      <SubType>Form</SubType>
+      <DependentUpon>frmSelectEntities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Html\frmSelectEntities.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Html\frmSelectEntities.designer.cs">
+      <DependentUpon>frmSelectEntities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Help\ZeraSystems.CodeNanite.Cshtml.CshtmlDelete.rtf" />
+    <None Include="Help\ZeraSystems.CodeNanite.Cshtml.CshtmlDetails.rtf" />
+    <None Include="Help\ZeraSystems.CodeNanite.Cshtml.CshtmlCreate.rtf" />
+    <None Include="Help\ZeraSystems.CodeNanite.Cshtml.CshtmlEdit.rtf" />
+    <None Include="Help\ZeraSystems.CodeNanite.Cshtml.CshtmlController.rtf" />
+    <None Include="Help\ZeraSystems.CodeNanite.Cshtml.CshtmlIndex.rtf" />
+    <None Include="packages.config" />
+    <None Include="ZeraSystems.CodeNanite.Cshtml.nuspec" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Html\frmSelectEntities.resx">
+      <DependentUpon>frmSelectEntities.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="logo64x64.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>if "$(ConfigurationName)" == "Debug" (
+    copy $(TargetFileName) "D:\Documents\CodeStencil\CodeNanites" /y
+) ELSE (
+    "D:\projects-desktop\codestencil\app\build-compile\signer-nuget.bat"   $(TargetPath) $(ProjectDir)$(ProjectName)
+)</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.   
+       Other similar extension points exist, see Microsoft.Common.targets.  
+  <Target Name="BeforeBuild">  
+  </Target>  
+  <Target Name="AfterBuild">  
+  </Target>  
+  -->
+</Project>

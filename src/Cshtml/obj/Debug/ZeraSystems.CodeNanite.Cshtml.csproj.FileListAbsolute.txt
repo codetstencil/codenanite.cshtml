@@ -1,0 +1,10 @@
+D:\projects-desktop\codestencil\code-nanites\zerasystems.cshtml\build\debug\ZeraSystems.CodeNanite.Cshtml.dll
+D:\projects-desktop\codestencil\code-nanites\zerasystems.cshtml\build\debug\ZeraSystems.CodeNanite.Cshtml.pdb
+D:\projects-desktop\codestencil\code-nanites\zerasystems.cshtml\src\Cshtml\obj\Debug\ZeraSystems.CodeNanite.Cshtml.csprojAssemblyReference.cache
+D:\projects-desktop\codestencil\code-nanites\zerasystems.cshtml\src\Cshtml\obj\Debug\ZeraSystems.CodeNanite.Cshtml.frmSelectEntities.resources
+D:\projects-desktop\codestencil\code-nanites\zerasystems.cshtml\src\Cshtml\obj\Debug\ZeraSystems.CodeNanite.Cshtml.csproj.GenerateResource.cache
+D:\projects-desktop\codestencil\code-nanites\zerasystems.cshtml\src\Cshtml\obj\Debug\ZeraSystems.CodeNanite.Cshtml.csproj.CopyComplete
+D:\projects-desktop\codestencil\code-nanites\zerasystems.cshtml\src\Cshtml\obj\Debug\ZeraSystems.CodeNanite.Cshtml.dll
+D:\projects-desktop\codestencil\code-nanites\zerasystems.cshtml\src\Cshtml\obj\Debug\ZeraSystems.CodeNanite.Cshtml.pdb
+D:\projects-desktop\codestencil\code-nanites\build\debug\ZeraSystems.CodeNanite.Cshtml.dll
+D:\projects-desktop\codestencil\code-nanites\build\debug\ZeraSystems.CodeNanite.Cshtml.pdb
