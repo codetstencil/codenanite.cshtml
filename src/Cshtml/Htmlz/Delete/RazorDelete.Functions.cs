@@ -16,10 +16,10 @@ namespace ZeraSystems.CodeNanite.Cshtml
             _columns = GetColumns(_table);
 
             AppendText();
-            AppendText(CshtmlHeader("Delete",_table, GetDefaultNameSpace()));
+            //AppendText(CshtmlHeader("Delete",_table, GetDefaultNameSpace()));
             var htmlColumns = GetHtmlColumns(_columns);
 
-            AppendText("Are you sure you want to delete this?".HTag(3));
+            //AppendText("Are you sure you want to delete this?".HTag(3));
             AppendText("<div>");
             {
                 var indent = 4;

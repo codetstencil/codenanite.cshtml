@@ -16,10 +16,11 @@ namespace ZeraSystems.CodeNanite.Cshtml
             _columns = GetColumns(_table);
 
             AppendText();
-            AppendText(CshtmlHeader("Create",_table, GetDefaultNameSpace()));
+            //AppendText(CshtmlHeader("Create",_table, GetDefaultNameSpace()));
 
-            AppendText(_table.HTag(4));
-            AppendText("<hr />");
+            //AppendText(_table.HTag(4));
+            //AppendText("<hr />");
+
             BuildText("class", "row", "div",0);
             {
                 BuildText("class", "col-md-4", "div", 4);

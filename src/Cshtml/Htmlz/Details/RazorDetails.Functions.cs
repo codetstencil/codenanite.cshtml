@@ -16,7 +16,7 @@ namespace ZeraSystems.CodeNanite.Cshtml
             _columns = GetColumns(_table);
 
             AppendText();
-            AppendText(CshtmlHeader("Details",_table, GetDefaultNameSpace()));
+            //AppendText(CshtmlHeader("Details",_table, GetDefaultNameSpace()));
             var htmlColumns = GetHtmlColumns(_columns);
 
             AppendText("<div>");
