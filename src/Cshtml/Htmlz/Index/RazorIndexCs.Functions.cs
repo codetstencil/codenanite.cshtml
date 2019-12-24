@@ -35,11 +35,11 @@ namespace ZeraSystems.CodeNanite.Cshtml
             AppendText();
             BuildSnippet(null);
 
-            BuildSnippet("namespace " + GetDefaultNameSpace() + ".Pages." + _table.Pluralize(), 0);
-            BuildSnippet("{", 0);
+            //BuildSnippet("namespace " + GetDefaultNameSpace() + ".Pages." + _table.Pluralize(), 0);
+            //BuildSnippet("{", 0);
             var indent = 4;
-            BuildSnippet(_public + "class " + _classname + " : PageModel", indent);
-            BuildSnippet("{", indent);
+            //BuildSnippet(_public + "class " + _classname + " : PageModel", indent);
+            //BuildSnippet("{", indent);
             indent += 4;
             BuildSnippet("private readonly " + GetDbContext() + " _context;", indent);
             BuildSnippet("");
@@ -63,8 +63,9 @@ namespace ZeraSystems.CodeNanite.Cshtml
             BuildSnippet(_public + "PaginatedList<" + _table + "> " + _table + _getSet, indent);
             BuildSnippet("");
             OnGetAsyncMethod(indent, relatedTables);
-            BuildSnippet("}", indent - 4);
-            BuildSnippet("}", 0);
+            //BuildSnippet("}", indent - 4);
+
+            //BuildSnippet("}", 0);
 
             AppendText(BuildSnippet(), "");
         }
