@@ -98,7 +98,8 @@ namespace ZeraSystems.CodeNanite.Cshtml
                 text = string.Join(string.Empty, columns
                     .Where(p => !p.IsPrimaryKey)
                     .Where(s => s.TableName != s.RelatedTable)
-                    .Select(p => ".Include(s => s." + p.RelatedTable + ")"));
+                    .Select(p => ".Include(s => s." + CreateTablePropertyName(p) + ")"));
+                    //.Select(p => ".Include(s => s." + p.RelatedTable + ")"));
             }
             return text.TrimEnd('\r', '\n');
         }

@@ -14,3 +14,4 @@ D:\projects-desktop\codestencil\code-nanites\codenanite.cshtml\src\Cshtml\obj\Re
 D:\projects-desktop\codestencil\code-nanites\codenanite.cshtml\src\Cshtml\obj\Release\ZeraSystems.CodeNanite.Cshtml.csproj.CopyComplete
 D:\projects-desktop\codestencil\code-nanites\codenanite.cshtml\src\Cshtml\obj\Release\ZeraSystems.CodeNanite.Cshtml.dll
 D:\projects-desktop\codestencil\code-nanites\codenanite.cshtml\src\Cshtml\obj\Release\ZeraSystems.CodeNanite.Cshtml.pdb
+D:\projects-desktop\codestencil\code-nanites\codenanite.cshtml\src\Cshtml\obj\Release\ZeraSystems.CodeNanite.Cshtml.csproj.CoreCompileInputs.cache

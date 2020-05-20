@@ -155,7 +155,7 @@ namespace ZeraSystems.CodeNanite.Cshtml
             BuildSnippet(".AsNoTracking()", 15);
             if (HasRelatedTables)
                 foreach (var item in relatedTables)
-                    BuildSnippet(".Include(c => c." + item.RelatedTable + ")", 15);
+                    BuildSnippet(".Include(c => c." + CreateTablePropertyName(item) + ")", 15);
             BuildSnippet(", pageIndex ?? 1, pageSize);", 15);
         }
 

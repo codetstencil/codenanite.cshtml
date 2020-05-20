@@ -3,7 +3,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <StartAction>Program</StartAction>
     <StartProgram>D:\projects-desktop\build\CodeStencil\Debug\CodeStencil.exe</StartProgram>
-    <StartArguments>/AllowMultiple</StartArguments>
+    <StartArguments>/DebugFile="D:\projects-desktop\codestencil\code-nanites\codenanite.cshtml\src\CodeStencil.Debug.xml"</StartArguments>
   </PropertyGroup>
   <PropertyGroup>
     <ProjectView>ProjectFiles</ProjectView>
@@ -11,5 +11,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
     <StartAction>Program</StartAction>
     <StartProgram>D:\projects-desktop\build\CodeStencil\Debug\CodeStencil.exe</StartProgram>
+    <StartArguments>
+    </StartArguments>
   </PropertyGroup>
 </Project>

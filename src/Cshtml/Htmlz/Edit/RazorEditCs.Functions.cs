@@ -41,7 +41,7 @@ namespace ZeraSystems.CodeNanite.Cshtml
                 foreach (var item in _foreignKeys)
                 {
                     if (item.TableName == item.RelatedTable) continue;
-                    fKeyInclude += ".Include(c =>c." + item.RelatedTable + ")";
+                    fKeyInclude += ".Include(c =>c." + CreateTablePropertyName(item) + ")";
                 }
 
                 BuildSnippet(_table + " = await _context." + _table, indent);
@@ -64,7 +64,7 @@ namespace ZeraSystems.CodeNanite.Cshtml
                 {
                     BuildSnippet("// Select current " + item.ColumnName + ".", indent);
                     BuildSnippet(
-                        "Populate" + item.RelatedTable + "Lookup(_context,"+GetTableAndPrimaryKey(_table)+");", indent);
+                        "Populate" + CreateTablePropertyName(item) + "Lookup(_context,"+GetTableAndPrimaryKey(_table)+");", indent);
                     //BuildSnippet("return Page();", indent);
                 }
             }
@@ -107,7 +107,7 @@ namespace ZeraSystems.CodeNanite.Cshtml
                 {
                     BuildSnippet("// Select " + item.ColumnName + " if TryUpdateModeAsync fails.", indent);
                     BuildSnippet(
-                        "Populate" + item.RelatedTable + "Lookup(_context," + _table.ToLower() + "ToUpdate." + item.ColumnName + ");", indent);
+                        "Populate" + CreateTablePropertyName(item) + "Lookup(_context," + _table.ToLower() + "ToUpdate." + item.ColumnName + ");", indent);
                 }
                 BuildSnippet("return Page();", indent);
 

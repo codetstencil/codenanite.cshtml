@@ -31,8 +31,8 @@ namespace ZeraSystems.CodeNanite.Cshtml
         "05/05/2019",                           // 6
         "CS_RAZOR_INDEX_SORT",                        // 7
         "1",                                    // 8
-        "",                                     // 9
-        "EXCLUDE"
+        "EXCLUDE",                                     // 9
+        ""
     })]
     public partial class RazorIndexSortSwitch : ExpansionBase, ICodeStencilCodeNanite
     {

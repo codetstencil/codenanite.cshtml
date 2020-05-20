@@ -36,6 +36,7 @@ namespace ZeraSystems.CodeNanite.Cshtml
                         AppendText(Indent(indent), "".TagEnd("dt").AddCarriage());
                         AppendText(Indent(indent), GetHtmlString("class", "col-sm-10", "dd").AddCarriage());
                         AppendText(Indent(indent + 4), "@Html.DisplayFor(model => model." + GetRelatedColumnName(item) + ")".AddCarriage());
+                        //AppendText(Indent(indent + 4), "@Html.DisplayFor(model => model." + GetRelatedColumnName(item) + ")".AddCarriage());
                         AppendText(Indent(indent), "".TagEnd("dd").AddCarriage());
                     }
                 }

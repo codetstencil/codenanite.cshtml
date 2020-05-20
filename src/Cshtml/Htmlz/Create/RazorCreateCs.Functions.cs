@@ -9,6 +9,7 @@ namespace ZeraSystems.CodeNanite.Cshtml
     {
         private string _table;
         private List<ISchemaItem> _foreignKeys;
+        private List<ISchemaItem> _selfJoinColumns;
 
         private string _public = "public ";
         private string _getSet = " { get; set; }";
@@ -18,6 +19,7 @@ namespace ZeraSystems.CodeNanite.Cshtml
         {
             _table = Input.Singularize();
             _foreignKeys = GetForeignKeysInTable(_table);
+            _selfJoinColumns = GetSelfJoinColumns(_table);
 
             //_classname = "IndexModel";
 
@@ -33,13 +35,28 @@ namespace ZeraSystems.CodeNanite.Cshtml
             BuildSnippet(_public + "IActionResult OnGet()", indent);
             BuildSnippet("{", indent);
             indent += 4;
+
             if (_foreignKeys.Any())
-            {
                 foreach (var item in _foreignKeys)
-                {
-                    BuildSnippet("Populate" + item.RelatedTable + "Lookup(_context);", indent);
-                }
+                    BuildSnippet("Populate" + CreateTablePropertyName(item) + "Lookup(_context);", indent);
+            else if (_selfJoinColumns.Any())
+                foreach (var item in _selfJoinColumns)
+                    BuildSnippet("Populate" + CreateTablePropertyName(item) + "Lookup(_context);", indent);
+            else
+            {
+                //AppendText(Indent(8) + "// Add your code here if you are creating lookup manually.");
             }
+
+
+            //if (_foreignKeys.Any())
+            //{
+            //    foreach (var item in _foreignKeys)
+            //    {
+            //        //BuildSnippet("Populate" + item.RelatedTable + "Lookup(_context);", indent);
+            //        BuildSnippet("Populate" + CreateTablePropertyName(item) + "Lookup(_context);", indent);
+            //    }
+            //}
+
             BuildSnippet("return Page();", indent);
             indent -= 4;
             BuildSnippet("}", indent);
@@ -85,12 +102,20 @@ namespace ZeraSystems.CodeNanite.Cshtml
                 indent -= 4;
                 BuildSnippet("}", indent);
 
-                foreach (var item in _foreignKeys)
-                {
-                    BuildSnippet(
-                        "Populate" + item.RelatedTable + "Lookup(_context, empty" + _table + "." + item.ColumnName +
-                        ");", indent);
-                }
+                if (_foreignKeys.Any())
+                    foreach (var item in _foreignKeys)
+                        BuildSnippet("Populate" + CreateTablePropertyName(item)+ "Lookup(_context, empty" + _table + "." + item.ColumnName + ");", indent);
+                        //BuildSnippet("Populate" + CreateTablePropertyName(item) + "Lookup(_context);", indent);
+                else if (_selfJoinColumns.Any())
+                    foreach (var item in _selfJoinColumns)
+                        BuildSnippet("Populate" + CreateTablePropertyName(item) + "Lookup(_context, empty" + _table + "." + item.ColumnName + ");", indent);
+                        //BuildSnippet("Populate" + CreateTablePropertyName(item) + "Lookup(_context);", indent);
+
+                //foreach (var item in _foreignKeys)
+                //{
+                //    BuildSnippet("Populate" + item.RelatedTable + "Lookup(_context, empty" + _table + "." + item.ColumnName + ");", indent);
+                //}
+
                 BuildSnippet("return Page();", indent);
             }
             else

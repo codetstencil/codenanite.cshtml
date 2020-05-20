@@ -89,7 +89,7 @@ namespace ZeraSystems.CodeNanite.Cshtml
             if (column.IsForeignKey && (column.RelatedTable == column.TableName))
                 return table + column.ColumnName + NavigationLabel();
             else if (column.IsForeignKey)
-                    return table + column.RelatedTable;
+                    return table + CreateTablePropertyName(column);
                 else
                     return table + column.ColumnName;
         }
