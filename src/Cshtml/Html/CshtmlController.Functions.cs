@@ -6,7 +6,7 @@ namespace ZeraSystems.CodeNanite.Cshtml
     {
         private void MainFunction()
         {
-            var columns = GetColumns(GetTable(Input));
+            var columns = GetColumns(GetTable(Input, false));
             AppendText();
             AppendText("<table class=" + AddQuotes("table") + ">");
             {

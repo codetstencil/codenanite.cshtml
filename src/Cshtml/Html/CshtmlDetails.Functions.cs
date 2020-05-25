@@ -9,9 +9,9 @@ namespace ZeraSystems.CodeNanite.Cshtml
             AppendText();
             AppendText(Constants.AspDivStartTag);
             {
-                AppendText(Indent(4) + "<h4>" + GetTable(Input) + "</h4>");
+                AppendText(Indent(4) + "<h4>" + GetTable(Input, false) + "</h4>");
                 AppendText(Indent(4) + "<hr />");
-                DlTagDetails(GetTable(Input));
+                DlTagDetails(GetTable(Input, false));
             }
             AppendText(Constants.AspDivEndTag);
 

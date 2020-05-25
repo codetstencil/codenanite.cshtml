@@ -17,7 +17,7 @@ namespace ZeraSystems.CodeNanite.Cshtml
 
         private void MainFunction()
         {
-            _table = GetTable(Input.Singularize());
+            _table = GetTable(Input.Singularize(), false);
             _foreignKeys = GetForeignKeysInTable(_table);
                 //.Where(t=>t.OriginalName==t.LookupColumn).ToList();
             _selfJoinColumns = GetSelfJoinColumns(_table);

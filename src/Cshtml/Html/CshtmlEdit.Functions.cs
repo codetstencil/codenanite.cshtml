@@ -12,7 +12,7 @@ namespace ZeraSystems.CodeNanite.Cshtml
             AppendText(Indent(8) + Constants.AspActionEdit);
 
             var x = 0;
-            var columns = GetColumns(GetTable(Input));
+            var columns = GetColumns(GetTable(Input, false));
             foreach (var column in columns)
             {
                 x++;
