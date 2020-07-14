@@ -17,7 +17,7 @@ namespace ZeraSystems.CodeNanite.Cshtml
 
         private void MainFunction()
         {
-            _table = GetTable(Input.Singularize(), false);
+            _table = GetTable( Singularize(Input,PreserveTableName()), false);
             _foreignKeys = GetForeignKeysInTable(_table);
                 //.Where(t=>t.OriginalName==t.LookupColumn).ToList();
             _selfJoinColumns = GetSelfJoinColumns(_table);
@@ -56,7 +56,7 @@ namespace ZeraSystems.CodeNanite.Cshtml
                 var key = GetPrimaryKey(item.RelatedTable);
                 var lookupDisplay = GetLookupDisplayColumn(_table, item.ColumnName);
                 //var selectList = "Select" + item.RelatedTable;
-                var query = item.RelatedTable.Pluralize().ToLower() + "Query";
+                var query = Pluralize(item.RelatedTable,PreserveTableName()).ToLower() + "Query";
                 var selectedTable = "selected" + item.RelatedTable;
                 BuildSnippet(_public + "SelectList " + selectList + _getSet, 8);
                 BuildSnippet("");
@@ -65,7 +65,7 @@ namespace ZeraSystems.CodeNanite.Cshtml
                 BuildSnippet("{", 8);
 
                 BuildSnippet(
-                    "var " + query + " = from q in context." + item.RelatedTable.Singularize() + " orderby q." + lookupDisplay +
+                    "var " + query + " = from q in context." + Singularize(item.RelatedTable,PreserveTableName()) + " orderby q." + lookupDisplay +
                     " select q;", 12);
                 //BuildSnippet("");
                 BuildSnippet(selectList + " = new SelectList(" + query + ".AsNoTracking(), " +

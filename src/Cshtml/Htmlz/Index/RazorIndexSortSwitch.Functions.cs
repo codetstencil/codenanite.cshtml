@@ -12,7 +12,7 @@ namespace ZeraSystems.CodeNanite.Cshtml
         private void MainFunction()
         {
             BuildSnippet(null);
-            _table = Input.Singularize();
+            _table = Singularize(Input,PreserveTableName());
 
             var sortColumns = GetSortColumns(_table);
             if (!sortColumns.Any()) return;

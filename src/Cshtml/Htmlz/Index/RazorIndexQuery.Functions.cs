@@ -12,12 +12,12 @@ namespace ZeraSystems.CodeNanite.Cshtml
         private void MainFunction()
         {
             BuildSnippet(null);
-            _table = Input.Singularize();
+            _table = Singularize(Input,PreserveTableName());
 
             //var relatedTables = GetRelatedTables(_table);
             var relatedTables = SchemaItem
                 .Where(e => (e.RelatedTable != null && 
-                             (e.TableName.Singularize() == _table.Singularize()) &&
+                             (Singularize(e.TableName,PreserveTableName()) == Singularize(_table,PreserveTableName())) &&
                              (e.RelatedTable != _table) && 
                              (e.IsPrimaryKey != e.IsForeignKey)));
 
@@ -30,7 +30,8 @@ namespace ZeraSystems.CodeNanite.Cshtml
 
             BuildSnippet("const int pageSize = " + pageSize+ ";",12);
 
-            BuildSnippet(_table + " = await PaginatedList<" + _table + ">.CreateAsync(" + _table.ToLower().Pluralize() ,12);
+            BuildSnippet(_table + " = await PaginatedList<" + _table + ">.CreateAsync(" + 
+                         Pluralize(_table,PreserveTableName()).ToLower() ,12);
             BuildSnippet(".AsNoTracking()", 15);
             if (relatedTables.Any())
                 foreach (var item in relatedTables)

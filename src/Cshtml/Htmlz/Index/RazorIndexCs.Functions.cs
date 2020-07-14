@@ -18,11 +18,11 @@ namespace ZeraSystems.CodeNanite.Cshtml
 
         private void MainFunction()
         {
-            _table = Input.Singularize();
+            _table = Singularize(Input,PreserveTableName());
             _sortColumns = GetSortColumns(_table);
             var relatedTables = SchemaItem
                 .Where(e => (e.RelatedTable != null &&
-                             (e.TableName.Singularize() == _table.Singularize()) &&
+                             (e.TableName == Singularize(_table,PreserveTableName()) ) &&
                              (e.RelatedTable != _table) &&
                              (e.IsPrimaryKey != e.IsForeignKey)));
 

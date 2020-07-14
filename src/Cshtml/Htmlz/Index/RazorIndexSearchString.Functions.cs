@@ -12,13 +12,13 @@ namespace ZeraSystems.CodeNanite.Cshtml
         private void MainFunction()
         {
             BuildSnippet(null);
-            _table = Input.Singularize();
+            _table = Singularize(Input,PreserveTableName());
 
             var searchColumns = GetSearchColumns(_table);
             if (!searchColumns.Any()) return;
             BuildSnippet("if (!string.IsNullOrEmpty(searchString))",12);
             BuildSnippet("{", 12);
-            BuildSnippet(_table.ToLower().Pluralize() ,16);
+            BuildSnippet(Pluralize(_table,PreserveTableName()).ToLower() ,16);
             foreach (var item in searchColumns)
             {
                 BuildSnippet(".Where(s => s." + item.ColumnName + ".Contains(searchString));",20);

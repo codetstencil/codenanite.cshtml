@@ -22,19 +22,30 @@ namespace ZeraSystems.CodeNanite.Cshtml
     [Export(typeof(ICodeStencilCodeNanite))]
     [CodeStencilCodeNanite(new[]
     {
-        "ZeraSystems Inc.",                    // 0
-        "Returns a generated Razor Cshtml Delete file",    // 1
-        "..",                                   // 2
-        "1.0",                                  // 3
-        "RazorDelete",                         // 4
-        "ZeraSystems.CodeNanite.Cshtml",               // 5
-        "02/05/2019",                           // 6
-        "CS_RAZOR_DELETE",                        // 7
-        "1",                                    // 8
-        "",                                     // 9
-        ""                                      // 10
+        // 0
+        "Zera Systems Inc.",  
+        // 1
+        "Returns an Input Component",    
+        // 2
+        "Returns an Input Component based on the data type of the column..",                                   
+        // 3
+        "1.0",                                  
+        // 4
+        "GetInputComponent",                         
+        // 5
+        "ZeraSystems.CodeNanite.Cshtml",               
+        // 6
+        "07/02/2020",                           
+        // 7
+        "CS_CSHTML_INPUT",                        
+        // 8
+        "1",                                   
+        // 9
+        "", 
+        // 10
+        ""                                      
     })]
-    public partial class RazorDelete : ExpansionBase, ICodeStencilCodeNanite
+    public partial class GetInputComponent : ExpansionBase, ICodeStencilCodeNanite
     {
         public string Input { get; set; }
         public string Output { get; set; }
@@ -48,7 +59,6 @@ namespace ZeraSystems.CodeNanite.Cshtml
         {
             Initializer(SchemaItem, Expander);
             MainFunction();
-            Output = ExpandedText.ToString();
         }
     }
 }

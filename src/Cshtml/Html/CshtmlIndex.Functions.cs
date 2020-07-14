@@ -10,7 +10,7 @@ namespace ZeraSystems.CodeNanite.Cshtml
 
         private void MainFunction()
         {
-            _columns = GetColumns(Input.Singularize());
+            _columns = GetColumns(Singularize(Input,PreserveTableName()));
 
             AppendText();
             AppendText("<table class=" + AddQuotes("table") + ">");

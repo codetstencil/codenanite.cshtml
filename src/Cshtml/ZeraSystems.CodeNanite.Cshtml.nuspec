@@ -15,24 +15,28 @@
     <copyright>$copyright$</copyright>
     <tags>Code Generator Template Stencil</tags>
     <dependencies>
-      <group targetFramework=".NETFramework4.6.2" >
-        <dependency id="ZeraSystems.CodeStencil.Contracts" version="1.1.1" />
-        <dependency id="ZeraSystems.CodeNanite.Expansion" version="1.0.0" />
-        <dependency id="Pluralize.NET" version="1.0.2.0" />
-      </group>
+      <!--<group targetFramework=".NETFramework4.7.2" >
+        <dependency id="System" version="4.0.0.0" />
+        <dependency id="System.ComponentModel.Composition" version="4.0.0.0" />
+        <dependency id="System.Core" version="4.0.0.0" />
+        <dependency id="System.Drawing" version="4.0.0.0" />
+        <dependency id="System.Windows.Forms" version="4.0.0.0" />
+        <dependency id="WindowsBase" version="4.0.0.0" />
+        <dependency id="PresentationCore" version="4.0.0.0" />
+      </group>-->
     </dependencies>
     <frameworkAssemblies>
-      <frameworkAssembly assemblyName="System" targetFramework="" />
-      <frameworkAssembly assemblyName="System.ComponentModel.Composition" targetFramework="" />
-      <frameworkAssembly assemblyName="System.Core" targetFramework="" />
-      <frameworkAssembly assemblyName="System.Drawing" targetFramework="" />
-      <frameworkAssembly assemblyName="System.Windows.Forms" targetFramework="" />
-      <frameworkAssembly assemblyName="WindowsBase" targetFramework="" />
-      <frameworkAssembly assemblyName="PresentationCore" targetFramework="" />
+      <frameworkAssembly assemblyName="System" targetFramework=".NETFramework4.7.2" />
+      <frameworkAssembly assemblyName="System.ComponentModel.Composition" targetFramework=".NETFramework4.7.2" />
+      <frameworkAssembly assemblyName="System.Core" targetFramework=".NETFramework4.7.2" />
+      <frameworkAssembly assemblyName="System.Drawing" targetFramework=".NETFramework4.7.2" />
+      <frameworkAssembly assemblyName="System.Windows.Forms" targetFramework=".NETFramework4.7.2" />
+      <frameworkAssembly assemblyName="WindowsBase" targetFramework=".NETFramework4.7.2" />
+      <frameworkAssembly assemblyName="PresentationCore" targetFramework=".NETFramework4.7.2" />
     </frameworkAssemblies>
   </metadata>
   <files>
-    <file src="..\..\..\build\release\ZeraSystems.CodeNanite.Cshtml.dll" target="lib\net462" />
+    <file src="..\..\..\build\release\ZeraSystems.CodeNanite.Cshtml.dll" target="lib\net472" />
     <file src="logo64x64.png" target="" />
   </files>
 </package>

@@ -12,7 +12,7 @@ namespace ZeraSystems.CodeNanite.Cshtml
 
         private void MainFunction()
         {
-            _table = Input.Singularize();
+            _table = Singularize(Input,PreserveTableName());
             _foreignKeys = GetForeignKeysInTable(_table);
             AppendText();
             AppendText(GetColumnsWithCommas());

@@ -1,0 +1,306 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.7.2": {
+      "Pluralize.NET/1.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net46/Pluralize.NET.dll": {}
+        },
+        "runtime": {
+          "lib/net46/Pluralize.NET.dll": {}
+        }
+      },
+      "ZeraSystems.CodeNanite.Expansion/1.3.2": {
+        "type": "package",
+        "dependencies": {
+          "Pluralize.NET": "1.0.2",
+          "ZeraSystems.CodeStencil.Contracts": "1.1.1"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.ComponentModel.Composition",
+          "System.Core",
+          "System.Drawing",
+          "System.Windows.Forms",
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/net472/ZeraSystems.CodeNanite.Expansion.dll": {}
+        },
+        "runtime": {
+          "lib/net472/ZeraSystems.CodeNanite.Expansion.dll": {}
+        }
+      },
+      "ZeraSystems.CodeStencil.Contracts/1.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "System.ComponentModel.Composition",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/net472/ZeraSystems.CodeStencil.Contracts.dll": {}
+        },
+        "runtime": {
+          "lib/net472/ZeraSystems.CodeStencil.Contracts.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win": {
+      "Pluralize.NET/1.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net46/Pluralize.NET.dll": {}
+        },
+        "runtime": {
+          "lib/net46/Pluralize.NET.dll": {}
+        }
+      },
+      "ZeraSystems.CodeNanite.Expansion/1.3.2": {
+        "type": "package",
+        "dependencies": {
+          "Pluralize.NET": "1.0.2",
+          "ZeraSystems.CodeStencil.Contracts": "1.1.1"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.ComponentModel.Composition",
+          "System.Core",
+          "System.Drawing",
+          "System.Windows.Forms",
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/net472/ZeraSystems.CodeNanite.Expansion.dll": {}
+        },
+        "runtime": {
+          "lib/net472/ZeraSystems.CodeNanite.Expansion.dll": {}
+        }
+      },
+      "ZeraSystems.CodeStencil.Contracts/1.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "System.ComponentModel.Composition",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/net472/ZeraSystems.CodeStencil.Contracts.dll": {}
+        },
+        "runtime": {
+          "lib/net472/ZeraSystems.CodeStencil.Contracts.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win-x64": {
+      "Pluralize.NET/1.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net46/Pluralize.NET.dll": {}
+        },
+        "runtime": {
+          "lib/net46/Pluralize.NET.dll": {}
+        }
+      },
+      "ZeraSystems.CodeNanite.Expansion/1.3.2": {
+        "type": "package",
+        "dependencies": {
+          "Pluralize.NET": "1.0.2",
+          "ZeraSystems.CodeStencil.Contracts": "1.1.1"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.ComponentModel.Composition",
+          "System.Core",
+          "System.Drawing",
+          "System.Windows.Forms",
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/net472/ZeraSystems.CodeNanite.Expansion.dll": {}
+        },
+        "runtime": {
+          "lib/net472/ZeraSystems.CodeNanite.Expansion.dll": {}
+        }
+      },
+      "ZeraSystems.CodeStencil.Contracts/1.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "System.ComponentModel.Composition",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/net472/ZeraSystems.CodeStencil.Contracts.dll": {}
+        },
+        "runtime": {
+          "lib/net472/ZeraSystems.CodeStencil.Contracts.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win-x86": {
+      "Pluralize.NET/1.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net46/Pluralize.NET.dll": {}
+        },
+        "runtime": {
+          "lib/net46/Pluralize.NET.dll": {}
+        }
+      },
+      "ZeraSystems.CodeNanite.Expansion/1.3.2": {
+        "type": "package",
+        "dependencies": {
+          "Pluralize.NET": "1.0.2",
+          "ZeraSystems.CodeStencil.Contracts": "1.1.1"
+        },
+        "frameworkAssemblies": [
+          "System",
+          "System.ComponentModel.Composition",
+          "System.Core",
+          "System.Drawing",
+          "System.Windows.Forms",
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/net472/ZeraSystems.CodeNanite.Expansion.dll": {}
+        },
+        "runtime": {
+          "lib/net472/ZeraSystems.CodeNanite.Expansion.dll": {}
+        }
+      },
+      "ZeraSystems.CodeStencil.Contracts/1.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "System.ComponentModel.Composition",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/net472/ZeraSystems.CodeStencil.Contracts.dll": {}
+        },
+        "runtime": {
+          "lib/net472/ZeraSystems.CodeStencil.Contracts.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Pluralize.NET/1.0.2": {
+      "sha512": "kr/sOAem5NPH7Ft0tNiaQOO7f/W7ExcLRERpgvg5BlVZimQ/d/MCxhnwnk+WL4dy5Bj/KjToHUl1azYYDfqzpA==",
+      "type": "package",
+      "path": "pluralize.net/1.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/Pluralize.NET.dll",
+        "lib/net451/Pluralize.NET.dll",
+        "lib/net46/Pluralize.NET.dll",
+        "lib/netstandard1.1/Pluralize.NET.dll",
+        "lib/netstandard2.0/Pluralize.NET.dll",
+        "pluralize.net.1.0.2.nupkg.sha512",
+        "pluralize.net.nuspec"
+      ]
+    },
+    "ZeraSystems.CodeNanite.Expansion/1.3.2": {
+      "sha512": "1o1zoo5el3Di6cPjxuc92VpxhfhgbDwZPHAEgfs/kAIedSUaqARN6lIJjbzE/HaJnEIf2sl4HNtk5VKgyoQkSg==",
+      "type": "package",
+      "path": "zerasystems.codenanite.expansion/1.3.2",
+      "files": [
+        ".nupkg.metadata",
+        "lib/net462/ZeraSystems.CodeNanite.Expansion.dll",
+        "lib/net472/ZeraSystems.CodeNanite.Expansion.dll",
+        "logo64x64.png",
+        "zerasystems.codenanite.expansion.1.3.2.nupkg.sha512",
+        "zerasystems.codenanite.expansion.nuspec"
+      ]
+    },
+    "ZeraSystems.CodeStencil.Contracts/1.3.0": {
+      "sha512": "G4xc/JopeXDehZbs45nJt1WmGuvwGGwNAMGAPke1LUtYpBseTCn82Sdg8asAwuaH5k6WyEVYEdzSrQwK6aC/Bw==",
+      "type": "package",
+      "path": "zerasystems.codestencil.contracts/1.3.0",
+      "files": [
+        ".nupkg.metadata",
+        "lib/net472/ZeraSystems.CodeStencil.Contracts.dll",
+        "logo64x64.png",
+        "zerasystems.codestencil.contracts.1.3.0.nupkg.sha512",
+        "zerasystems.codestencil.contracts.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.7.2": [
+      "ZeraSystems.CodeNanite.Expansion >= 1.3.2",
+      "ZeraSystems.CodeStencil.Contracts >= 1.3.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Ayodele-Desktop\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\projects-desktop\\codestencil\\code-nanites\\codenanite.cshtml\\src\\Cshtml\\ZeraSystems.CodeNanite.Cshtml.csproj",
+      "projectName": "ZeraSystems.CodeNanite.Cshtml",
+      "projectPath": "D:\\projects-desktop\\codestencil\\code-nanites\\codenanite.cshtml\\src\\Cshtml\\ZeraSystems.CodeNanite.Cshtml.csproj",
+      "packagesPath": "C:\\Users\\Ayodele-Desktop\\.nuget\\packages\\",
+      "outputPath": "D:\\projects-desktop\\codestencil\\code-nanites\\codenanite.cshtml\\src\\Cshtml\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Ayodele-Desktop\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.1.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net472"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Users\\Public\\Documents\\Infragistics\\NuGet\\": {},
+        "D:\\nuget-packages": {},
+        "d:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
+        "d:\\Program Files (x86)\\DevExpress 20.1\\Components\\System\\Components\\Packages": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nuget.devexpress.com/Sftjgrwm1Qw2VOy8jPS49kShtzYfnNcs3CHCzC5H7THPJewULl/api": {}
+      },
+      "frameworks": {
+        "net472": {
+          "projectReferences": {}
+        }
+      }
+    },
+    "frameworks": {
+      "net472": {
+        "dependencies": {
+          "ZeraSystems.CodeNanite.Expansion": {
+            "target": "Package",
+            "version": "[1.3.2, )"
+          },
+          "ZeraSystems.CodeStencil.Contracts": {
+            "target": "Package",
+            "version": "[1.3.0, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}

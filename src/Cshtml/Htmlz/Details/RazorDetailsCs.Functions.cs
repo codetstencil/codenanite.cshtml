@@ -10,7 +10,7 @@ namespace ZeraSystems.CodeNanite.Cshtml
 
         private void MainFunction()
         {
-            _table = Input.Singularize();
+            _table = Singularize(Input,PreserveTableName());
             AppendText();
             AppendText(Indent(4) + "public class DetailsModel : PageModel");
             AppendText(Indent(4) + "{");
