@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "SCFMBTDuEpXTw09QAC0I9ZKVPje9SRCAmEfMlXasgSUA/O3zvM/ZMYscvHqJR6Y1VIvncxb7JU/qOHzk93ZoJw==",
+  "dgSpecHash": "1Fz55bZgA4C78+agF0Ya1sYZ8g6A9KIGfP2iD3Pasy5MsiIJu78gJ2y8Wqs5vFtu5FG6j7BEgayRcWOKTbm3Vw==",
   "success": true,
   "projectFilePath": "D:\\projects-desktop\\codestencil\\code-nanites\\codenanite.cshtml\\src\\Cshtml\\ZeraSystems.CodeNanite.Cshtml.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ayodele-Desktop\\.nuget\\packages\\pluralize.net\\1.0.2\\pluralize.net.1.0.2.nupkg.sha512",
-    "C:\\Users\\Ayodele-Desktop\\.nuget\\packages\\zerasystems.codenanite.expansion\\1.3.2\\zerasystems.codenanite.expansion.1.3.2.nupkg.sha512",
+    "C:\\Users\\Ayodele-Desktop\\.nuget\\packages\\zerasystems.codenanite.expansion\\1.3.2.3\\zerasystems.codenanite.expansion.1.3.2.3.nupkg.sha512",
     "C:\\Users\\Ayodele-Desktop\\.nuget\\packages\\zerasystems.codestencil.contracts\\1.3.0\\zerasystems.codestencil.contracts.1.3.0.nupkg.sha512"
   ],
   "logs": []
